@@ -1,0 +1,13 @@
+<div>
+	{{-- Implement your logic here --}}
+	{{-- Available properties: string|null $title, string|null $contents, Section $section --}}
+	{{-- Available methods: $bit(string $uid): Bit|null, $bitsOfType(string $type): Collection --}}
+
+	<x-site-section-container>
+		<x-site-section-title :$section/>
+
+		<div class="">
+			{!! \AntonioPrimera\Md\Facades\Md::parse($contents) !!}
+		</div>
+	</x-site-section-container>
+</div>

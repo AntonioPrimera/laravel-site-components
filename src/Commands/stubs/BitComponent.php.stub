@@ -1,0 +1,23 @@
+<?php
+namespace DUMMY_NAMESPACE;
+
+use AntonioPrimera\Site\Components\BitComponent;
+
+/**
+ * Available public properties (usable in the blade view):
+ * @property \AntonioPrimera\Site\Models\Bit $bit
+ * @property string|null $type
+ * @property string|null $icon
+ * @property string|null $title
+ * @property string|null $contents
+ */
+class DUMMY_CLASS extends BitComponent
+{
+	//TODO: define any public properties that you want to pass to the view here
+	//TODO: define any public methods that you want to use in the view here
+	
+	public function mount(): void
+	{
+		//TODO: override this method if you want to set any properties when the component is created
+	}
+}
