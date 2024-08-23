@@ -10,9 +10,9 @@ class SectionTitle extends Component
     public string $title;
     public int|string $level;
 
-    public function __construct(Section|null $section = null, string|null $title = null, int|string $level = 2)
+    public function __construct(Section|string|null $section = null, string|null $title = null, int|string $level = 2)
     {
-        $this->title = $section ? $section->title : $title;
+        $this->title = $section ? section($section)->title : $title;
         $this->level = $level;
     }
 
