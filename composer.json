@@ -33,15 +33,15 @@
     "autoload": {
         "psr-4": {
             "AntonioPrimera\\SiteComponents\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "AntonioPrimera\\SiteComponents\\Tests\\": "tests/"
         },
         "files": [
             "src/viewHelpers.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AntonioPrimera\\SiteComponents\\Tests\\": "tests/"
+        }
     },
     "scripts": {
         "test": "vendor/bin/pest"
