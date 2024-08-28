@@ -18,7 +18,6 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": ">=11.0",
-        "antonioprimera/laravel-generator-command": "^3.0",
         "antonioprimera/laravel-site": "^v1.0",
         "antonioprimera/md-parser": "^1.2",
         "spatie/laravel-package-tools": "^1.16"
@@ -33,14 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AntonioPrimera\\SiteComponents\\": "src/",
-            "AntonioPrimera\\SiteComponents\\Database\\Factories\\": "database/factories/"
+            "AntonioPrimera\\SiteComponents\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AntonioPrimera\\SiteComponents\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "AntonioPrimera\\SiteComponents\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -55,10 +52,7 @@
         "laravel": {
             "providers": [
                 "AntonioPrimera\\SiteComponents\\SiteComponentsServiceProvider"
-            ],
-            "aliases": {
-                "SiteComponents": "AntonioPrimera\\SiteComponents\\Facades\\SiteComponents"
-            }
+            ]
         }
     },
     "minimum-stability": "stable",
