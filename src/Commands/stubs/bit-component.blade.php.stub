@@ -1,9 +1,0 @@
-<div>
-	{{-- Implement your logic here --}}
-	{{-- Available properties: string|null $type, string|null $icon, string|null $title, string|null $contents, Bit $bit --}}
-
-	<h3 class="">{{ $title }}</h3>
-	<div class="">
-		{!! \AntonioPrimera\Md\Facades\Md::parse($contents) !!}
-	</div>
-</div>

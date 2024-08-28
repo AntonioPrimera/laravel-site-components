@@ -1,8 +1,6 @@
 <?php
 namespace AntonioPrimera\SiteComponents\Components;
 
-use AntonioPrimera\Site\Models\Bit;
-use AntonioPrimera\Site\Models\Section;
 use Illuminate\View\Component;
 use Illuminate\View\View;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
