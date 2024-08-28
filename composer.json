@@ -38,7 +38,10 @@
     "autoload-dev": {
         "psr-4": {
             "AntonioPrimera\\SiteComponents\\Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "src/viewHelpers.php"
+        ]
     },
     "scripts": {
         "test": "vendor/bin/pest"
