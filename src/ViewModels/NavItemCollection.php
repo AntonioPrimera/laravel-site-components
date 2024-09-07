@@ -9,14 +9,13 @@ class NavItemCollection implements Arrayable
 	
 	public function __construct(array $navItems)
 	{
-		foreach ($navItems as $navItem) {
+		foreach ($navItems as $navItem)
 			is_array($navItem) ? $this->createFromArray($navItem) : $this->add($navItem);
-		}
 	}
 	
-	public static function create(): self
+	public static function create(array $navItems = []): self
 	{
-		return new self([]);
+		return new self($navItems);
 	}
 	
 	public function add(NavItem $navItem): static
@@ -37,8 +36,8 @@ class NavItemCollection implements Arrayable
 		return $this;
 	}
 	
-	public function toArray()
+	public function toArray(): array
 	{
-		return array_map(fn($navItem) => $navItem->toArray(), $this->navItems);
+		return $this->navItems;
 	}
 }
