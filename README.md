@@ -19,6 +19,19 @@ You can install the package via composer:
 composer require antonioprimera/laravel-site-components
 ```
 
+## Scaffolding commands
+
+### Scaffold the layout
+
+You can scaffold the layout components by running the following command:
+
+```bash
+php artisan site-components:layout
+```
+
+This will generate the following View Components: `OuterLayout`, `GuestLayout`, `GuestNav` and the css file for the
+guest nav.
+
 ## Prebuilt components
 
 The package provides a set of prebuilt components that you can use in your site. The prebuilt components are
