@@ -7,12 +7,14 @@ use Illuminate\View\View;
 
 abstract class Nav extends Component
 {
-	public NavItemCollection $items;
+	public NavItemCollection $navItemCollection;
+	public array $navItems;
 	protected string $viewName = 'site::nav';
 	
     public function __construct()
     {
-		$this->items = $this->navItems();
+		$this->navItemCollection = $this->navItems();
+		$this->navItems = $this->navItemCollection->toArray();
     }
 
     public function render(): View

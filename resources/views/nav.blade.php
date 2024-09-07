@@ -25,8 +25,8 @@
 
             {{-- Desktop menu --}}
             <div class="nav-header-menu">
-                @foreach($items as $menuItem)
-                    <a href="{{ $menuItem['url'] }}" class="nav-header-menu-item {{ $menuItem['active'] ? 'active-menu-item' : 'default-menu-item' }}" aria-current="page">{{ $menuItem['label'] }}</a>
+                @foreach($navItems as $navItem)
+                    <a href="{{ $navItem['url'] }}" class="nav-header-menu-item {{ $navItem['active'] ? 'active-menu-item' : 'default-menu-item' }}" aria-current="page">{{ $navItem['label'] }}</a>
                 @endforeach
             </div>
 
@@ -73,8 +73,8 @@
             {{ $mobileMenu }}
         @else
             <div class="mobile-menu-container">
-                @foreach($items as $menuItem)
-                    <a href="{{ $menuItem['url'] }}" class="mobile-menu-item {{ $menuItem['active'] ? 'active-menu-item' : 'default-menu-item' }}" aria-current="page">{{ $menuItem['label'] }}</a>
+                @foreach($navItems as $navItem)
+                    <a href="{{ $navItem['url'] }}" class="mobile-menu-item {{ $navItem['active'] ? 'active-menu-item' : 'default-menu-item' }}" aria-current="page">{{ $navItem['label'] }}</a>
                 @endforeach
             </div>
         @endif
