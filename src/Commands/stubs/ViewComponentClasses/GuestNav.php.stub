@@ -1,0 +1,17 @@
+<?php
+namespace App\View\Components;
+
+use AntonioPrimera\SiteComponents\Components\Nav;
+use AntonioPrimera\SiteComponents\ViewModels\NavItemCollection;
+
+class GuestNav extends Nav
+{
+	protected string $viewName = 'layouts.guest-nav';
+	
+	protected function navItems(): NavItemCollection
+	{
+		//todo: add your nav items here
+		return NavItemCollection::create()
+			->item('Home', '/');
+	}
+}

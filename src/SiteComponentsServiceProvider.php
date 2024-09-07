@@ -1,6 +1,7 @@
 <?php
 namespace AntonioPrimera\SiteComponents;
 
+use AntonioPrimera\SiteComponents\Commands\CreateSiteLayoutCommand;
 use AntonioPrimera\SiteComponents\Components\Image;
 use AntonioPrimera\SiteComponents\Components\Nav;
 use AntonioPrimera\SiteComponents\Components\SectionContainer;
@@ -15,6 +16,9 @@ class SiteComponentsServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-site-components')
 			->hasViews('site')
+			->hasCommands(
+				CreateSiteLayoutCommand::class,
+			)
             ->hasViewComponents(
                 'site',
                 Image::class,
